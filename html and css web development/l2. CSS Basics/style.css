@@ -1,3 +1,16 @@
-h2 {
+/* h2 {
     color: cadetblue;
+} */
+
+.title {
+    /* bgc */
+    background-color: grey;
+}
+
+.heading {
+    color: darkkhaki;
+}
+
+.heading-about {
+    color: rgb(154, 22, 22);
 }
