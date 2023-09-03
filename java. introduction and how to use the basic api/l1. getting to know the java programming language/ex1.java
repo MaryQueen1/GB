@@ -20,6 +20,6 @@ public class ex1 {
     public static void main(String[] args) {
         int k = 2;
         List<Integer> coefficients = generatePolynomialCoefficients(k);
-        System.out.println(coefficients);
+        // System.out.println(coefficients);
     }
 }
