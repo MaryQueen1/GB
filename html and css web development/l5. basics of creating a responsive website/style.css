@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    width: 1200px;
+} */
+
+.header {
+    /* width: 1200px;
+    width: 100%;
+    height: 350px; */
+    /* max-width: 1200px;
+    min-height: 100vh; */
+    border: 1px solid #000;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    background-color: #f17b7b;
+    flex-wrap: wrap;
+}
+
+.item {
+    /* max-width: 250px;
+    min-width: 250px;
+    min-height: 250px; */
+    /* width: 450px; */
+    width: 33.333333vw;
+    height: 50vh;
+    border: 1px solid #000;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    box-sizing: border-box;
+}
+
+
+
+/* стили для планшета */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 24px;
+    }
+    .item {
+        background-color: #f2f96d;
+        width: 50vw;
+        height: 350px;
+    }
+}
+
+/* стили для мобилки */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .item {
+        background-color: aquamarine;
+        width: 100vw;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        text-decoration: underline;
+    }
+}
