@@ -1,4 +1,4 @@
-public class hw1 {
+public class hw4 {
     public static StringBuilder answer(String QUERY, String PARAMS) {
         StringBuilder whereClause = new StringBuilder();
     
@@ -35,7 +35,7 @@ public class hw1 {
             PARAMS = args[1];
         }
     
-        hw1 ans = new hw1();
+        hw4 ans = new hw4();
         System.out.println(ans.answer(QUERY, PARAMS));
     }
 }

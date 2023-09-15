@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class hw1 {
+public class hw6 {
 
     public static int[] mergeSort(int[] a) {
 
@@ -52,7 +52,7 @@ public class hw1 {
     public static void main(String[] args) {
 
         int[] a = {5, 1, 6, 2, 3, 4};
-        int[] sortedArray = hw1.mergeSort(a);
+        int[] sortedArray = hw6.mergeSort(a);
         System.out.println(Arrays.toString(sortedArray));
 
     }

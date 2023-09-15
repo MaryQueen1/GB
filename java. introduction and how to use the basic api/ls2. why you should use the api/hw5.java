@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class hw2 {
+public class hw5 {
     
     private static File log;
     private static FileWriter fileWriter;
@@ -71,7 +71,7 @@ public class hw2 {
                         .toArray();
       }     
 
-      hw2 ans = new hw2();      
+      hw5 ans = new hw5();      
       ans.sort(arr);
 
       try (BufferedReader br = new BufferedReader(new FileReader("log.txt"))) {
