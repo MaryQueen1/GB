@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson6</title>
+    <link rel="stylesheet" href="style_l6.css">
+</head>
+<body>
+    <header class="shapka"></header>
+    <nav>
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+    </nav>
+    <main>
+        <section class="about">
+            <h2>Обо мне</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi alias consectetur id est voluptas iure asperiores.</p>
+        </section>
+        <section>
+            <h2>Мои навыки</h2>
+                <article>
+                    <h3>HTML5</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat eius natus maiores voluptate expedita modi minus, nisi reprehenderit quos beatae ea laborum delectus!</p>
+                </article>
+                <article>
+                    <h3>CSS3</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat eius natus maiores voluptate expedita modi minus, nisi reprehenderit quos beatae.</p>
+                </article>
+                <article>
+                    <h3>JS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugiat ipsa odit!</p>
+                </article>
+        </section>
+        <section>
+            <h2>Первые шаги в веб-разработке</h2>
+            <figure>
+                <figcaption>Уровень ЗП</figcaption>
+                <img src="#" alt="ЗП">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, corrupti dolorem quibusdam sequi voluptatum minus ipsum accusamus aspernatur suscipit libero vel voluptatem cumque sed. Doloribus id ut praesentium ducimus est cumque repellendus.</p>    
+            </figure>
+        </section>
+        <section>
+            <h2>Истории обо мне</h2>
+            <details open>
+                <summary>История работы в первой компании</summary>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae, rerum qui repellat iusto minima neque fugiat sed a dolorem sunt corporis quod illo tempore odit quaerat recusandae nisi. Repellendus odio quae in, alias laborum distinctio quia delectus assumenda facere non repellat itaque officiis aspernatur dolor porro culpa placeat ratione omnis aut amet incidunt. Possimus, in.</p>
+            </details>
+            <details>
+                <summary>Опыт работы</summary>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident commodi magnam dolores id assumenda numquam sunt, earum perferendis ullam iusto minima fuga eligendi tempora? Maiores explicabo vitae nobis temporibus, sed aperiam tenetur ratione repudiandae consequuntur porro quod obcaecati tempore aliquam expedita quibusdam distinctio enim.</p>
+            </details>
+        </section>
+        <section>
+            <h2>Оставить заявку на проект</h2>
+            <form action="#">
+                <!-- required свойство обязательного поля ввода -->
+                Ваше имя <input autofocus required type="text"><br>
+                Email <input type="email"><br>
+                Дата старта разработки проекта <input type="date"><br>
+                Сколько проектов вы хотите, чтобы я создал <input min="1" value="3" type="number"><br>
+                Какие границы <input type="range"><br>
+                <button type="submit">Отсавить заявку</button>
+            </form>
+        </section>
+        <section>
+            <h2>Музыкальный раздел сайта</h2>
+            <!-- controls чтоб было видео -->
+            <audio controls autoplay src="audio.mp3"></audio><br>
+            <section class="video-box">
+                <h2 class="video-header">Крутое видео</h2>
+                <video class="video" controls preload="auto" src="video.mp4"></video>
+            </section>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+</body>
+</html>
