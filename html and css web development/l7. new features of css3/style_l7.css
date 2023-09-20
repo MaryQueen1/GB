@@ -1,0 +1,248 @@
+/* ко всем элементам */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    min-width: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+}
+
+/* .container {
+    width: 1280px;
+    margin: 0 auto;
+} */
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #2f2e41;
+    display: flex;
+    gap: 32px;
+}
+
+.header_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.header_link:hover {
+    color:#6c63ff;
+}
+
+.header_link:active {
+    color: black;
+}
+
+.header_link:first-child {
+    text-decoration: underline;
+}
+
+.header_link:last-child {
+    border-right: 1px solid #6c63ff;
+    padding-right: 32px;
+}
+
+/* .header_link:nth-child(2n) {
+    background-color: rgb(61, 72, 72);
+} */
+
+.top {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.img_first {
+    width: 560px;
+}
+
+.title {
+    width: 578px;
+    font-size: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 113px;
+    color: #6c63ff;
+    mix-blend-mode: normal;
+}
+
+.button {
+    display: block;
+    width: 190px;
+    height: 40px;
+    border: 1px solid #6c63ff;
+    text-align: center;
+    line-height: 40px;
+    color: #6c63ff;
+    font-size: 20px;
+    margin-top: 16px;
+    transition: all 1s;
+}
+
+.button:hover {
+    background-color: #6c63ff;
+    color: rgb(255, 255, 255);
+}
+
+.about {
+    background: rgba(242,242,242,0.34);
+    padding-top: 64px;
+    padding-bottom: 194px;
+}
+
+.heading {
+    font-size: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 80px;
+    color: #6c63ff;
+    mix-blend-mode: normal;
+}
+
+.about_content {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_text {
+    width: 462px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7d7987;
+    mix-blend-mode: normal;
+}
+
+.second_img {
+    width: 560px;
+}
+
+.list_item_new:hover::after {
+    content: ' <<';
+    color: brown;
+}
+
+.icon:hover path{
+    fill: blue;
+}
+
+/* .drive { */
+.bord {
+    /* margin-top: 32px; */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .drive:hover .car {
+    margin-left: 1000px;
+} */
+
+.bord_item {
+/* .car { */
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    transition: transform 1s;
+    /* transition: margin 3s; */
+
+}
+
+/* .bord_item-1:hover { */
+.bord_item-1 {
+    /* transform: translate(200px, -30px) scale(1.5); */
+    /* transform: rotate(60deg); */
+    transform: skew(15deg);
+}
+
+.bord_item-2:hover {
+    transform: translateY(-30px) scale(1.5);
+}
+
+/* .bord_item-3:hover { */
+.bord_item-3 {
+    /* transform: translate(-200px, -30px) scale(1.5); */
+    transform: rotate(-60deg);
+}
+
+/* .car-1 {
+    transition-timing-function: ease;
+}
+
+.car-2 {
+    transition-timing-function: ease-in;
+}
+
+.car-3 {
+    transition-timing-function: ease-out;
+}
+
+.car-4 {
+    transition-timing-function: ease-in-out;
+}
+
+.car-5 {
+    transition-timing-function: linear;
+} */
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 360px);
+        padding-right: calc(50% - 360px);
+    }
+
+    .about_content {
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    .header {
+        justify-content: center;
+    }
+}
