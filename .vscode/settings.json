@@ -1,12 +1,13 @@
 {
     "java.project.sourcePaths": [
         "object-oriented programming/ls1. principles of oop. encapsulation, inheritance, polymorphism/products",
+        "object-oriented programming/ls1. principles of oop. encapsulation, inheritance, polymorphism/hw1oop",
         "object-oriented programming/ls1. principles of oop. encapsulation, inheritance, polymorphism/cats",
         "java. introduction and how to use the basic api/ls5. storing and processing h2 data. multiple map collections",
         "java. introduction and how to use the basic api/ls4. storage and processing of h1 data. priority collections",
         "java. introduction and how to use the basic api/ls3. java collections introduction",
         "java. introduction and how to use the basic api/ls2. why you should use the api",
         "java. introduction and how to use the basic api/ls1. getting to know the java programming language",
-        "object-oriented programming/ls1. principles of oop. encapsulation, inheritance, polymorphism/hw1oop"
+        "object-oriented programming/ls2. principles of oop abstraction and interfaces. design example/behavior"
     ]
 }
