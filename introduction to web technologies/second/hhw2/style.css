@@ -1,0 +1,23 @@
+* {
+    background-color: rgb(249, 205, 205);
+}
+
+h1 {
+    color: #56382d;
+}
+
+h2 {
+    font-style: italic;
+}
+
+img {
+    border: 10px solid #56382d;
+}
+
+div {
+    display: flex;
+}
+
+p {
+    padding: 20px;
+}
