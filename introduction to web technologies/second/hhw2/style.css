@@ -21,3 +21,13 @@ div {
 p {
     padding: 20px;
 }
+
+.img {
+    width: 500px;
+    margin-top: 20px;
+}
+
+a {
+    color: #56382d;
+    font-size: 18px;
+}
