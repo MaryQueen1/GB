@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "object-oriented programming/ls3. some standard java interfaces and examples of their use/study",
         "object-oriented programming/ls2. principles of oop abstraction and interfaces. design example/behavior",
         "object-oriented programming/ls1. principles of oop. encapsulation, inheritance, polymorphism/products",
         "object-oriented programming/ls1. principles of oop. encapsulation, inheritance, polymorphism/hw1oop",
@@ -9,6 +10,6 @@
         "java. introduction and how to use the basic api/ls3. java collections introduction",
         "java. introduction and how to use the basic api/ls2. why you should use the api",
         "java. introduction and how to use the basic api/ls1. getting to know the java programming language",
-        "object-oriented programming/ls3. some standard java interfaces and examples of their use/study"
+        "object-oriented programming/ls7. oop design and solid part 2/attestation"
     ]
 }
