@@ -1,0 +1,21 @@
+
+-- create
+CREATE TABLE groupmates (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO groupmates (name,age,address) VALUES ('Clark', 23, 'Москва');
+INSERT INTO groupmates (name,age,address) VALUES ('Dave', 44, 'Владимир');
+INSERT INTO groupmates (name,age,address) VALUES ('Ava', 67, 'Спб');
+INSERT INTO groupmates (name,age,address) VALUES ('John', 15, 'Курск');
+INSERT INTO groupmates (name,age,address) VALUES ('Marsy', 22, 'Москва');
+INSERT INTO groupmates (name,age,address) VALUES ('Sanny', 18, 'Sales');
+INSERT INTO groupmates (name,age,address) VALUES ('Kate', 13, 'Москва');
+
+
+-- fetch 
+SELECT id, name FROM groupmates WHERE age >= 18 AND age < 30 AND address = 'Москва';
