@@ -1,19 +1,21 @@
-public class HotDrinksVendingMachine implements VendingMachine{
+public class HotDrinksVendingMachine implements VendingMachine {
+    private VendingMachineController controller;
+    private VendingMachineView view;
+
+    public HotDrinksVendingMachine() {
+        controller = new VendingMachineController();
+        view = new VendingMachineView();
+    }
+
     @Override
     public void getProduct(String name, int loan) {
-        HotDrink drink = new HotDrink(name, loan) {
-            @Override
-            public void prepare() {
-                System.out.println("Приготовлен горячий напиток: " + getName() + ", объем: " + getLoan() + " мл");
-            }
-        };
-
-        drink.prepare();
+        controller.getProduct(name, loan);
+        view.displayProduct(name, loan);
     }
 
     @Override
     public void getProduct(String name, int loan, int temperature) {
-        AdditionalTemperatureField drink = new AdditionalTemperatureField(name, loan, temperature);
-        drink.prepare();
+        controller.getProduct(name, loan, temperature);
+        view.displayProduct(name, loan, temperature);
     }
 }

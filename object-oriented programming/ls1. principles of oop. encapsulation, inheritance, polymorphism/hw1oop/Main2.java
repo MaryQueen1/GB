@@ -6,4 +6,3 @@ public class Main2 {
         automat.getProduct("Кофе", 300, 80);
     }
 }
-
