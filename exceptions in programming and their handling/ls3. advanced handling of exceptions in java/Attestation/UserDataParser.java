@@ -3,7 +3,7 @@ public class UserDataParser {
         String[] data = input.split(" ");
 
         if (data.length != 6) {
-            throw new IllegalArgumentException("Неверное количество данных");
+            throw new IllegalArgumentException("Incorrect amount of data");
         }
 
         String lastName = data[0];
@@ -16,11 +16,11 @@ public class UserDataParser {
         try {
             phoneNumber = Long.parseLong(data[4]);
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Неверный формат номера телефона");
+            throw new IllegalArgumentException("Invalid phone number format");
         }
 
         if (data[5].length() != 1 || (!data[5].equals("f") && !data[5].equals("m"))) {
-            throw new IllegalArgumentException("Неверный формат пола");
+            throw new IllegalArgumentException("Invalid floor format");
         }
 
         gender = data[5].charAt(0);
