@@ -1,3 +1,3 @@
-public interface AreaCalculator {
-    public double getArea();
-}
+// public interface AreaCalculator {
+//     public double getArea();
+// }

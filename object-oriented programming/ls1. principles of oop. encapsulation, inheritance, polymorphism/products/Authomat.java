@@ -1,9 +1,9 @@
-import java.util.ArrayList;
+// import java.util.ArrayList;
 
-public class Authomat {
-    list list = new ArrayList<>();
+// public class Authomat {
+//     list list = new ArrayList<>();
 
-    initProducts (List <Product>) {
+//     initProducts (List <Product>) {
         
-    }
-}
+//     }
+// }
