@@ -4,7 +4,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class notesApplication {
-    private static final String FILE_PATH = "C:\\Users\\Maria\\OneDrive\\GB\\intermediate control work on the specialization block\\notes.txt";
+    private static final String FILE_PATH = "C:\\Users\\Maria\\OneDrive\\GB\\intermediate control work on the specialization block\\the first";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

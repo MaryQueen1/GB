@@ -51,7 +51,7 @@ def delete_note(path):
         file.truncate()
 
 def main():
-    path = r"C:\Users\Maria\OneDrive\GB\intermediate control work on the specialization block"
+    path = r"C:\Users\Maria\OneDrive\GB\intermediate control work on the specialization block\the first"
     while True:
         print("1. Создать заметку")
         print("2. Просмотреть список заметок")
