@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Gilroy SemiBold';
+    src: url(./fonts/Gilroy-SemiBold.ttf);
+    font-family: 'Gilroy Medium';
+    src: url(./fonts/Gilroy-Medium.ttf);
+    font-family: 'Gilroy Bold';
+    src: url(./fonts/Gilroy-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin-top: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    margin-left: 375px;
+}
+
+.company__name {
+    margin-top: 45px;
+    margin-left: 14px;
+    font-family: 'Gilroy Bold';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+span.grow {
+    color: #000;
+}
+  
+span.be {
+    color: #F25822;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-top: 51px;
+    margin-right: 375px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu__link1 {
+    margin-right: 40px;
+    color: #000;
+    font-family: 'Gilroy Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu__link {
+    color: #000;
+    font-family: 'Gilroy Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu__link:hover {
+    font-family: 'Gilroy SemiBold';
+    color: #F25822;
+}
+
+.menu__link1:hover {
+    font-family: 'Gilroy SemiBold';
+    color: #F25822;
+}
+
+
+/* ??? как сделать так, чтобы иконка тоже стала #F25822 */
+/* .icon:hover {
+    src: url(./img/icon2.svg);
+} */
+
+.example {
+    font-family: 'Gilroy SemiBold';
+    color: #F25822;
+}
+
+
+.contant {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contant__info {
+    margin-top: 84px;
+    margin-left: 373px;
+    width: 522px;
+    height: 374px;
+}
+
+.title {
+    color: #000;
+    font-family: 'Gilroy Bold';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text__info {
+    margin-top: 17px;
+    color: #888;
+    font-family: 'Gilroy Medium';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttons {
+    margin-top: 37px;
+    margin-left: 2px;
+}
+
+.start {
+    border: none;
+    width: 140px;
+    height: 50px;
+    margin-right: 72px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-family: 'Gilroy Bold';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.watch {
+    border: none;
+    background: none;
+    border-width: 90px;
+    color: #AAA;
+    font-family: 'Gilroy Bold';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info__img {
+    margin-top: 94.71px;
+    margin-right: 367.25px;
+    width: 544.814px;
+    height: 374.843px;
+    flex-shrink: 0;
+}
+
+.logos {
+    margin-top: 259.45px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logos {
+    margin-right: 48px;
+}
