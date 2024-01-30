@@ -128,12 +128,10 @@ a {
     line-height: normal;
 }
 
-.buttons {
+.start {
+    display: inline-block;
     margin-top: 37px;
     margin-left: 2px;
-}
-
-.start {
     border: none;
     width: 140px;
     height: 50px;
@@ -142,11 +140,13 @@ a {
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
     color: #FFF;
+    text-align: center;
+    text-justify: center;
     font-family: 'Gilroy Bold';
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 50px;;
 }
 
 .watch {

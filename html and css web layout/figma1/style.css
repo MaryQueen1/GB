@@ -53,9 +53,3 @@ a, p, h1, button {
     line-height: 160%; /* 28.8px */
 }
 
-button {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
