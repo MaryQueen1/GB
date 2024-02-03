@@ -5,6 +5,8 @@
     src: url(./fonts/Gilroy-Medium.ttf);
     font-family: 'Gilroy Bold';
     src: url(./fonts/Gilroy-Bold.ttf);
+    font-family: 'Gilroy Regular';
+    src: url(./fonts/Gilroy-Regular.ttf);
 }
 
 * {
@@ -146,7 +148,7 @@ a {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px;;
+    line-height: 50px;
 }
 
 .watch {
@@ -177,4 +179,144 @@ a {
 
 .footer__logos {
     margin-right: 48px;
+}
+
+.three_blocks {
+    margin-top: 121.5px;
+    margin-block-end: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.title_block {
+    font-family: 'Gilroy Bold';
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    padding-top: 25px;
+}
+
+.text_block {
+    font-family: 'Gilroy Regular';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #666;
+    padding-top: 17px;
+}
+
+.read-more {
+    font-family: 'Gilroy Bold';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    color: #000;
+    padding-top: 25px;
+}
+
+.second_block {
+    margin-right: 60px;
+    margin-left: 60px;
+    padding-left: 30px;
+    padding-top: 40px;
+    border-width: 370px;
+    border: none;
+    width: 370px;
+    height: 291px;
+    box-shadow: 0px 0px 13px 0px #FAFAFA;
+    color: #FFF;
+}
+
+.first_block, .third_block {
+    padding-left: 30px;
+    padding-top: 40px;
+    border: none;
+    width: 370px;
+    height: 291px;
+}
+
+.why__we {
+    margin-top: 100px;
+    background-color: #FAFAFA;
+    height: 919px;
+}
+
+.head_why__we {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 92px;
+}
+
+.title_why__we {
+    font-family: 'Gilroy Bold';
+    font-weight: 400;
+    font-size: 45px;
+    color: #000;
+}
+
+.p_why__we {
+    margin-top: 19px;
+    font-family: 'Gilroy Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #666;
+}
+
+.cards_why__we {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.title_card {
+    margin-top: 25px;
+    font-family: 'Gilroy Bold';
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+}
+
+.text_card {
+    margin-top: 22px;
+    font-family: 'Gilroy Regular';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #aaa;
+}
+
+.button-learn_more {
+    display: inline-block;
+    border: none;
+    margin-top: 39px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 150px;
+    height: 50px;
+    margin-right: 72px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    text-align: center;
+    font-family: 'Gilroy Bold';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;;
+}
+
+.button_card {
+    font-family: 'Gilroy Bold';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    text-align: center;
 }
