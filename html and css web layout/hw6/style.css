@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* background-color: var(--primary-color);
+   font-family: var(--font-family); */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ :root {
+    --first-pink: #F16D7F;
+    --font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    max-width: 2560px;
+    height: 75px;
+}
+
+.left__head {
+    margin-left: 235px;
+}
+
+.logo {
+    padding-right: 41px;
+}
+
+.catalog, .profile {
+    padding-right: 33px;
+}
+
+.right__head {
+    margin-right: 235px;
+}
+
+.the_brand {
+    display: flex;
+    align-items: center;
+    background-color: #F1E4E6;
+    max-height: 764px;
+}
+
+.text_brand {
+    border-left: 12px solid var(--first-pink);
+    padding-left: 16px;
+    margin-left: 64px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 48px;
+    color: #222;
+}
+
+.luxerious {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.fashion {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--first-pink);
+}
+
+.catalog_img {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    padding-right: 230px;
+    padding-left: 230px;
+    background-color: #fff;
+}
+
+.for_woman, .for_men {
+    margin-right: 30px;
+}
+
+.catalog_accesories {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.catalog_for-woman, .catalog_for-men, .catalog_for-kids, .catalog_accesories {
+    position: relative;
+    text-align: center;
+}
+
+.catalog_text_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+}
+
+.first_line {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.second_line {
+    color: var(--first-pink);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.fetured_items {
+    margin-top: 96px;
+}
+.title1, .paragraph1 {
+    display: flex;
+    justify-content: center;
+}
+
+.title1 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 30px;
+    color: #222;
+}
+
+.paragraph1 {
+    padding-top: 6px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #9f9f9f;
+}
+
+.fetured_items-img_text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 230px;
+}
+
+.fetured_items-groups_img{
+    position: relative;
+    padding-right: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.fetured_items-group_text {
+    position: absolute;
+    top: 86%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+}
+
+.ellery {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+}
+
+.know {
+    padding-top: 16px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 14px;
+    color: #5d5d5d;
+}
+
+.price {
+    padding-top: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--first-pink);
+}
+
+.button_browse {
+    margin-top: 48px;
+    margin-left: 695px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--first-pink);
+    max-width: 212px;
+    max-height: 48px;
+    padding: 15px;
+}
+
+.text-button_browse {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--first-pink);
+}
