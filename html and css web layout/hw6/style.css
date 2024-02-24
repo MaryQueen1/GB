@@ -85,6 +85,16 @@ header {
     width: 100%;
 }
 
+.catalog_accesories {
+    display: flex;
+    justify-content: center;
+}
+
+.accesories {
+    margin-top: 30px;
+    max-width: 100%;
+}
+
 
 .catalog_for-woman, .catalog_for-men, .catalog_for-kids, .catalog_accesories {
     position: relative;
@@ -97,6 +107,12 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: var(--font-family);
+}
+
+.catalog_text_img2 {
+    top: 58%;
+    left: 50%;
+
 }
 
 .first_line {
