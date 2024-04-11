@@ -1,0 +1,414 @@
+@import "vars";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding-left: calc(50% - $widthSite / 2);
+  padding-right: calc(50% - $widthSite / 2);
+  &__left {
+    display: flex;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  &__img {
+    width: 100%;
+    height: 51px;
+  }
+  &__text {
+    color: $textDark;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    padding-left: 13px;
+  }
+  &__d {
+    color: $textLight;
+    font-weight: 900;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  &__browse-list {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-left: 37px;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    color: $textDark;
+    letter-spacing: 0.025em;
+    width: 87px;
+    height: 38px;
+    background-color: #cdcdcc;
+    background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0px 0px 3px;
+  }
+  &__browse-list:after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    color: #838383;
+    padding-left: 8px;
+    padding-right: 9px;
+  }
+  &__form {
+    position: relative;
+    width: 317px;
+    margin: 0 auto;
+  }
+  &__text {
+    width: 100%;
+    height: 38px;
+    padding-left: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px 3px 3px 0px;
+    outline: none;
+    color: #a4a4a4;
+  }
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 38px;
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+  }
+  &__button:after {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #a4a4a4;
+  }
+}
+
+.personal {
+  display: flex;
+  align-items: center;
+  &__cart-shopping {
+    margin-right: 26px;
+  }
+  &__account {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 130px;
+    height: 38px;
+    background-color: $textLight;
+    color: #fff;
+    padding-left: 19px;
+  }
+  &__account:after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 12px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  &__menu {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    margin-left: 40px;
+  }
+  &__home {
+    margin-left: 0;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  &__img {
+    width: 100%;
+  }
+  &__text {
+    position: absolute;
+    font-family: Lato;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: $textDark;
+    border-left: 12px solid $textLight;
+    padding-left: 12px;
+    margin-left: calc(50% - $widthSite / 2);
+  }
+  &__luxerious {
+    font-size: 40px;
+  }
+  &__fashion {
+    font-size: 40px;
+    color: $textLight;
+  }
+}
+
+%rectangle {
+  background-color: #fff;
+  position: absolute;
+  margin-top: 25px;
+}
+
+%rectangleText {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: $textDark;
+}
+
+.for {
+  display: flex;
+  justify-content: center;
+  margin-top: 98px;
+  margin-bottom: 100px;
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    margin-left: $marginCollage;
+  }
+  &__left-men {
+    margin-bottom: $marginCollage;
+  }
+  &__right-women {
+    margin-bottom: $marginCollage;
+  }
+  &__left1-rectangle {
+    @extend %rectangle;
+    width: 175px;
+    height: 82px;
+  }
+  &__left2-rectangle {
+    @extend %rectangle;
+    width: 225px;
+    height: 82px;
+    margin-top: 586px;
+  }
+  &__left3-rectangle {
+    @extend %rectangle;
+    width: 162px;
+    height: 82px;
+  }
+  &__left4-rectangle {
+    @extend %rectangle;
+    width: 180px;
+    height: 82px;
+    margin-top: 307px;
+  }
+  &__left1-text {
+    @extend %rectangleText;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  &__left2-text {
+    @extend %rectangleText;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 603px;
+    margin-left: 20px;
+  }
+
+  &__left3-text {
+    @extend %rectangleText;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  &__left4-text {
+    @extend %rectangleText;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 322px;
+    margin-left: 20px;
+  }
+  &__rectangle-light {
+    font-size: 30px;
+    color: $textLight;
+  }
+}
+
+.offers {
+  display: flex;
+  margin-left: calc(50% - $widthSite / 2);
+  margin-right: calc(50% - $widthSite / 2);
+  &__block {
+    width: 373px;
+    height: 529px;
+    background-color: #222224;
+  }
+  &__shadow {
+    position: absolute;
+  }
+  &__text {
+    margin-top: 146px;
+    margin-left: 39px;
+    position: absolute;
+    font-family: Lato;
+    font-size: 53.7px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+  }
+  &__offer {
+    color: $textLight;
+  }
+  &__forwomen {
+    margin-top: 207px;
+    font-size: 32.2px;
+  }
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 36px;
+    margin-top: 46px;
+  }
+  &__sales {
+    margin-top: 124px;
+  }
+  &__quality {
+    margin-top: 124px;
+  }
+  &__main-text {
+    margin-left: 114px;
+    position: absolute;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+  }
+  &__main-text1 {
+    margin-top: 55px;
+  }
+  &__main-text2 {
+    margin-top: 137px;
+  }
+  &__main-text3 {
+    margin-top: 140px;
+  }
+  &__small-text {
+    margin-left: 111px;
+    position: absolute;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+  }
+  &__small-text1 {
+    margin-top: 92px;
+  }
+  &__small-text2 {
+    margin-top: 99px;
+  }
+  &__small-text3 {
+    margin-top: 98px;
+  }
+}
+
+.subscribe {
+  margin-top: 97px;
+  &__background {
+    width: 100%;
+  }
+  &__background-color {
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+  }
+  &__left {
+    display: flex;
+    position: absolute;
+  }
+  &__left2 {
+    position: absolute;
+  }
+  &__right {
+    display: flex;
+    position: absolute;
+  }
+  &__feedback2-img {
+    margin-left: 230px;
+    margin-top: 111px;
+  }
+  &__feedback2-text {
+    margin-left: 28px;
+    margin-top: 123px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.025em;
+    color: #222224;
+  }
+  &__left2 {
+    margin-left: 343px;
+    margin-top: 210px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 300;
+    color: #222224;
+  }
+  &__feedback2-name {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: $textLight;
+  }
+}

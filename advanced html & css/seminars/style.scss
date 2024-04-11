@@ -1,0 +1,44 @@
+@import 'vars';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+%font {
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+
+.container {
+    width: $widthSite;
+}
+
+.wordpreprocessors {
+    color: $colorText;
+}
+
+.nav {
+    display: flex;
+    gap: $gap;
+}
+
+.nav__link {
+    text-decoration: none;
+    @extend %font;
+}
+   
+// Hello World!
+
+.content {
+    display: flex;
+    @include centerflex();
+    gap: $gap;
+    &__item {
+        width: $widthSite / 4;
+        height: 200px;
+        border: $border;
+    }
+}
