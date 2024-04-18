@@ -1,0 +1,108 @@
+@import "vars";
+
+.footernav {
+    margin-top: 109px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    &__logo {
+      display: flex;
+      align-items: center;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    &__p1 {
+      margin-top: 29px;
+      grid-area: 2 / 1 / 5 / 3;
+    }
+    &__p2 {
+      grid-area: 5 / 1 / 7 / 3;
+    }
+    &__title1 {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    &__title2 {
+      grid-area: 1 / 4 / 2 / 5;
+    }
+    &__title3 {
+      grid-area: 1 / 5 / 2 / 6;
+    }
+    &__text1 {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+    &__text2 {
+      grid-area: 3 / 3 / 4 / 4;
+    }
+    &__text3 {
+      grid-area: 4 / 3 / 5 / 4;
+    }
+    &__text4 {
+      grid-area: 5 / 3 / 6 / 4;
+    }
+    &__text5 {
+      grid-area: 6 / 3 / 7 / 4;
+    }
+    &__text6 {
+      grid-area: 2 / 4 / 3 / 5;
+    }
+    &__text7 {
+      grid-area: 3 / 4 / 4 / 5;
+    }
+    &__text8 {
+      grid-area: 4 / 4 / 5 / 5;
+    }
+    &__text9 {
+      grid-area: 5 / 4 / 6 / 5;
+    }
+    &__text10 {
+      grid-area: 6 / 4 / 7 / 5;
+    }
+    &__text11 {
+      grid-area: 2 / 5 / 3 / 6;
+    }
+    &__text12 {
+      grid-area: 3 / 5 / 4 / 6;
+    }
+    &__text13 {
+      grid-area: 4 / 5 / 5 / 6;
+    }
+    &__text14 {
+      grid-area: 5 / 5 / 6 / 6;
+    }
+    &__text15 {
+      grid-area: 6 / 5 / 7 / 6;
+    }
+    &__paragraph {
+      width: 427px;
+      font-family: Lato;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+      letter-spacing: 0.025em;
+      color: #898989;
+    }
+    &__links {
+      transition: 0.5s;
+      &:hover {
+        color: $textLight;
+      }
+    }
+    &__h {
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+      letter-spacing: 0.025em;
+      color: $textLight;
+    }
+    &__links {
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 59px;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      color: #898989;
+    }
+  }
+  

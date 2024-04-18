@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'latoblack';
 }
 
 a {
@@ -51,7 +51,7 @@ a {
         color: $colorText;
     }
     &__text {
-        font-family: var(--font-family);
+        font-family: 'latolight';
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
@@ -107,3 +107,59 @@ a {
     font-weight: 700;
     color: $colorSelectSite;
 }
+
+//
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .header2 {
+    background-color: #ccc;
+    height: 150px;
+    margin-bottom: 50px;
+    &__button {
+      margin-left: 300px;
+    }
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .block {
+    width: $widthSite/3 - 2 * $bd-width;
+    border: $bd-width solid black;
+    height: 300px;
+    &__button {
+      margin: 200px auto 0;
+      &_border {
+        border: $bd-width solid black;
+      }
+    }
+  }
+  
+  .button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: darkolivegreen;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    &_border-blue {
+      border: $bd-width solid rgb(57, 136, 222);
+    }
+    &:hover {
+      background-color: #b4b63e;
+    }
+    &__hover-red:hover {
+      background-color: #590303;
+      transform: scale(1.2);
+    }
+    transition: all 0.5s;
+  }
