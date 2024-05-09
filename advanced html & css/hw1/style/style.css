@@ -969,4 +969,9 @@ a {
   line-height: 20px;
   font-weight: 400;
   color: #ff0d0d;
+}
+
+.slide {
+  background-color: #f7f7f7;
+  height: 777px;
 }/*# sourceMappingURL=style.css.map */
