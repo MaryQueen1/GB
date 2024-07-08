@@ -14,21 +14,24 @@ const data = `
         "symbol": "&#36;",
         "rate": "57,136.527",
         "description": "United States Dollar",
-        "rate_float": 57136.5272
+        "rate_float": 57136.5272,
+        "img": "./usd.png"      
       },
       "GBP": {
         "code": "GBP",
         "symbol": "&pound;",
         "rate": "44,580.604",
         "description": "British Pound Sterling",
-        "rate_float": 44580.604
+        "rate_float": 44580.604,
+        "img": "./gbp.jpg"      
       },
       "EUR": {
         "code": "EUR",
         "symbol": "&euro;",
         "rate": "52,759.412",
         "description": "Euro",
-        "rate_float": 52759.4122
+        "rate_float": 52759.4122,
+        "img": "./eur.png"      
       }
     }
   }
