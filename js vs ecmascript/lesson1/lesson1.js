@@ -92,3 +92,59 @@ console.log("результат add (Калькулятор)");
 console.log(calc.add(5));
 console.log("результат subtract (Калькулятор)");
 console.log(calc.subtract(5));
+
+// Напишите функцию createGreeting, которая принимает имя
+// пользователя и возвращает функцию, которая будет возвращать
+// приветствие с использованием этого имени.
+
+// // Пример использования:
+// const greeting = createGreeting('John');
+// console.log(greeting()); // "Hello, John!"
+
+function createGreeting(userName) {
+  return () => `Hello, ${userName}!`;
+}
+const greeting = createGreeting("John");
+console.log(greeting());
+
+// Напишите функцию createPasswordChecker, которая
+// принимает минимальную длину пароля в качестве аргумента и
+// возвращает функцию для проверки введенного пароля.
+// Возвращаемая функция должна принимать пароль и возвращать
+// true, если его длина больше или равна заданной длине,
+// в противном случае - false.
+
+function createPasswordChecker(minLengthPassword) {
+  return (password) => password.length >= minLengthPassword;
+}
+
+const isPasswordValid = createPasswordChecker(8);
+
+console.log(isPasswordValid("password")); // true
+console.log(isPasswordValid("secret")); // false
+// console.log(createPasswordChecker(8)("passworawdawdd"));
+
+// Напишите рекурсивную функцию sumDigits, которая принимает
+// положительное целое число в качестве аргумента и возвращает
+// сумму его цифр.
+
+// // Пример использования:
+console.log(sumDigits(123)); // 6 (1 + 2 + 3)
+console.log(sumDigits(456789)); // 39 (4 + 5 + 6 + 7 + 8 + 9)
+
+function sumDigits(num) {
+  if (num < 10) {
+    return num;
+  } else {
+    return (num % 10) + sumDigits(Math.floor(num / 10));
+  }
+}
+
+// function sumDigits(num) {
+//   if (num === 1) {
+//     return 1;
+//   } else {
+//     return sumDigits(num - 1) + num;
+//   }
+// }
+// console.log(sumDigits(123)); // 7626
