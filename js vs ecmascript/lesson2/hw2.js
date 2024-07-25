@@ -14,19 +14,20 @@ console.log("Домашнее задание");
 // book.displayInfo(); // "Title: BookName1, Author: Author1, Pages: 123"
 
 class Book {
-    constructor(title, author, pages) {
-        this.title = title;
-        this.author = author;
-        this.pages = pages;
-    }
-    displayInfo() {
-        console.log(`Название книги - ${this.title}, автор - ${this.author}, количество страниц - ${this.pages}`);
-    }
+  constructor(title, author, pages) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+  }
+  displayInfo() {
+    console.log(
+      `Название книги - ${this.title}, автор - ${this.author}, количество страниц - ${this.pages}`
+    );
+  }
 }
 
 const book = new Book("Мастер и Маргарита", "Михаил Булгаков", 528);
 book.displayInfo();
-
 
 // Задание 2: "Управление списком студентов"
 // Реализуйте класс Student, представляющий студента, со следующими свойствами и методами:
@@ -40,3 +41,15 @@ book.displayInfo();
 // const student = new Student("John Smith", 16, "10th grade");
 // student.displayInfo(); // "Name: John Smith, Age: 16, Grade: 10th grade"
 
+class Student {
+  constructor(name, age, grade) {
+    this.name = name;
+    this.age = age;
+    this.grade = grade;
+  }
+  displayInfo() {
+    console.log(`Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`);
+  }
+}
+const student = new Student("John Smith",16,"10th grade");
+student.displayInfo();
