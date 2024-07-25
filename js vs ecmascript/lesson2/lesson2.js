@@ -99,3 +99,32 @@ console.log(add.call(obj));
 // представлением имени и возраста персоны.
 // const person = new Person("John", 25);
 // person.introduce(); // "My name is John and I'm 25 years old."
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    introduce() {
+        console.log(`My name is ${this.name} and I'm ${this.age} years old.`);
+    }
+}
+const user = new Person("John",25);
+user.introduce();
+
+// Создайте класс BankAccount, который представляет банковский счет.
+// У него должны быть свойства accountNumber (номер счета) и balance
+// (баланс), а также методы deposit(amount) для пополнения счета, 
+// withdraw(amount) для снятия денег со счета и метод printBalance, 
+// который отобразит в консоль текущий баланс счета. Класс должен иметь
+// также статическое свойство bankName со значением "GBank", которое 
+// содержит название банка.
+ 
+// const account1 = new BankAccount("1234567890", 1000);
+// account1.deposit(500);
+// account1.withdraw(200);
+// account1.withdraw(1500); // Insufficient funds in account "1234567890"
+// account1.withdraw(-200); // Wrong deposit amount, must be a positive number.
+// account1.deposit(-500); // Wrong deposit amount, must be a positive number.
+// account1.deposit(Infinity); // Wrong deposit amount, must be a positive number.
+// account1.printBalance(); // GBank account "1234567890" balance: 1300
