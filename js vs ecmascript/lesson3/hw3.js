@@ -48,7 +48,32 @@ manager.displayInfo(); // "Name: Jane Doe, Department: Sales"
 // Метод addProduct(product) - принимает объект класса Product и добавляет его в список продуктов заказа.
 // Метод getTotalPrice() - возвращает общую стоимость заказа, основанную на ценах продуктов.
 
+class Product {
+  constructor(name, price, quantity) {
+    this.name = name;
+    this.price = price;
+    this.quantity = quantity;
+  }
+}
 
+class Order {
+    constructor(id) {
+        this.id = id;
+        this.products = [];
+    }
+
+    addProduct(product) {
+        this.products.push(product);
+    }
+
+    getTotalPrice() {
+        let totalPrice = 0;
+        this.products.forEach(product => {
+            totalPrice += product.price * product.quantity;
+        })
+        return totalPrice;
+    }
+}
 
 const order = new Order(12345);
 
