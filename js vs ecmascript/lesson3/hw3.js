@@ -75,6 +75,21 @@ class Order {
     }
 }
 
+// исправления:
+
+// 2. this.products = []; обычно, если мы не передаем при создании объекта значение, а его просто нужно поставить, то ставим мы это дело прям в классе:
+
+// class Order {
+//   products = [];
+
+//   constructor(id) {
+//     this.id = id;
+//   }
+
+//   ...
+// }
+// В getTotalPrice лучше использовать метод reduce у массива, он сюда лучше зайдет.
+
 const order = new Order(12345);
 
 const product1 = new Product("Phone", 500, 2);
