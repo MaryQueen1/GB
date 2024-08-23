@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Unsplash Image</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 10px;
+        height: 300px;
+      }
+      .photo-info {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .like-button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Случайное изображение Unsplash</h1>
+    <img id="image" src="../../sobko_maxim-1178.jpg" alt="Random Unsplash Image" />
+    <div class="photo-info">
+      <p>Фотограф: <span id="photographer"></span></p>
+      <button class="like-button" id="likeButton">Лайк</button>
+      <p>Количество лайков: <span id="likeCount">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

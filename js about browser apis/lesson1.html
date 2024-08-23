@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. Определение текущего размера окна браузера:
+○ Напишите функцию, которая будет выводить текущую
+ширину и высоту окна браузера при его изменении. -->
+
+    <section class="task">
+      <h1>Определение текущего размера окна браузера</h1>
+      <p>Ширина окна: <span class="window-size" id="width"></span>px</p>
+      <p>Высота окна: <span class="window-size" id="height"></span>px</p>
+    </section>
+
+    <script>
+      const windowSize = () => {
+        const widthEl = window.innerWidth;
+        const heightEl = window.innerHeight;
+
+        const windowSizeEl = document.querySelectorAll(".window-size");
+
+        width.textContent = widthEl;
+        height.textContent = heightEl;
+      };
+
+      window.addEventListener("load", windowSize);
+      window.addEventListener("resize", windowSize); // изменение размера
+    </script>
+
+    <!-- 2. Подтверждение закрытия страницы:
+○ Создайте всплывающее окно или диалоговое окно,
+которое появляется при попытке закрыть вкладку
+браузера и спрашивает пользователя, уверен ли он в
+своем решении закрыть страницу. -->
+    <section class="task">
+      <h1>подтверждение закрытия страницы</h1>
+      <p>Это страница с подтверждением закрытия</p>
+    </section>
+
+    <script>
+      window.addEventListener("beforeunload", function (e) {
+        e.preventDefault();
+        e.returnValue = "Text";
+      });
+    </script>
+
+    <!--     3. Управление историей переходов: ○ Используйте объект history для
+    управления историей переходов на веб-странице. Создайте кнопки "Назад" и
+    "Вперед" для перемещения по истории. -->
+    <section class="task">
+      <h1>Управление историей переходов</h1>
+      <button class="history-button" id="goBack">Назад</button>
+      <button class="history-button" id="goForward">Вперед</button>
+    </section>
+
+    <script>
+      goBack.addEventListener("click", function (e) {
+        window.history.back();
+      });
+      goForward.addEventListener("click", function (e) {
+        window.history.forward();
+      });
+    </script>
+
+    <!-- <script>
+      document.getElementById("goBack").addEventListener("click", function () {
+        window.history.back();
+      });
+
+      document.getElementById("goForward").addEventListener("click", function () {
+        window.history.forward();
+      });
+    </script> -->
+  </body>
+</html>
