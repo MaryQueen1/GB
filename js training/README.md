@@ -1,5 +1,5 @@
 # Ex. 1 
-###Your Task Is To Write A Function That **takes A String And Return A New String With All Vowels Removed (Гласные Удалены)**. **For Example**, The String 'This Website Is For Losers LOL!' Would Become 'Ths Wbst S Fr Lsrs LL!'. Note: For This Kata Y Isn't Considered A Vowel.
+Your Task Is To Write A Function That **takes A String And Return A New String With All Vowels Removed (Гласные Удалены)**. **For Example**, The String 'This Website Is For Losers LOL!' Would Become 'Ths Wbst S Fr Lsrs LL!'. Note: For This Kata Y Isn't Considered A Vowel.
 
 ```javascript
 function disemvowel(str) {
