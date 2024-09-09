@@ -1,4 +1,4 @@
-# Ex. 1 
+# Ex. 1 - Remove Vowels From Words
 Your Task Is To Write A Function That **takes A String And Return A New String With All Vowels Removed (Гласные Удалены)**. **For Example**, The String 'This Website Is For Losers LOL!' Would Become 'Ths Wbst S Fr Lsrs LL!'. Note: For This Kata Y Isn't Considered A Vowel.
 
 ```javascript
@@ -14,7 +14,7 @@ function disemvowel(str) {
 ### [] - ``Symbol Class``: That Any One Of The Characters Inside The Brackets Will Match The Match Found (соответствовать найденном совпадению).
 
 ___
-# Ex. 2
+# Ex. 2 - 942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
 Digital Root (Цифорвой Корень) Is The Recursive Sum Of All The Digits In A Number. Given N, **Take The Sum Of The Digits Of N**. If That Value Has More Than One Digit, **Continue Reducing** (Уменьшать/Сокращать) **In This Way Until A Single-digit Number Is Produced** (Пока Не Получите). The Input Will Be A Non-negative Integer.  
 **Examples**: 
 * 16  -->  1 + 6 = 7
