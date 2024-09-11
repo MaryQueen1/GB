@@ -19,7 +19,7 @@ cd vite-project
 npm install
 npm run dev
 ```
-
+If U Need `scss`, U Need To Instal It Too: `npm i sass` It Will Install In node.modules
 ```
 package.json
 "dev": "vite --open",
