@@ -24,3 +24,40 @@ npm run dev
 package.json
 "dev": "vite --open",
 ```
+We Create cd `components` And Working There:
+```js
+import { useState } from "react";
+
+function Counter(params) {
+  const [count, setCount] = useState(0);
+
+  const updateCount = () => {
+    setCount(count + 2);
+  };
+  return (
+    <div>
+      <span>{count}</span>
+      <button onClick={updateCount}>Click +2</button>
+    </div>
+  );
+}
+
+export default Counter;
+```
+In `App.js` We Output The Result:
+
+```js
+import Counter from "./components/counter";
+
+function App() {
+  const userName = "Mary";
+  return (
+    <div>
+      <h1>Hello {userName}</h1>
+      <Counter />
+    </div>
+  );
+}
+
+export default App;
+```
