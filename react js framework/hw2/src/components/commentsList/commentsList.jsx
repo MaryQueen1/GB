@@ -9,7 +9,7 @@ function CommentsList() {
 
   const handleDelete = (id) => {
     const updateComments = comments.filter(
-      (thisComment) => thisComment.id != id
+      (thisComment) => thisComment.id !== id
     );
     setComments(updateComments);
   };

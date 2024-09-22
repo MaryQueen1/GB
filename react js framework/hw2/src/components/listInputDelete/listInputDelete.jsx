@@ -22,7 +22,7 @@ function ListInputDelete() {
   };
 
   const handleDeleteText = (id) => {
-    const updateText = text.filter((thisText) => thisText.id != id);
+    const updateText = text.filter((thisText) => thisText.id !== id);
     setText(updateText);
   };
 
