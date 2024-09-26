@@ -63,3 +63,4 @@ export default App;
 ```
 
 ```npm install react-router-adom```
+`npm install @reduxjs/toolkit`
