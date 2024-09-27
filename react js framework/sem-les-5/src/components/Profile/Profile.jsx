@@ -8,8 +8,8 @@ export const Profile = () => {
 
   const style = {
     padding: "10px",
-    backgrounColor: theme === "light" ? "#f0f0f0" : "#333",
-    color: theme === "light" ? "#000" : "#fff",
+    backgroundColor: theme === "light" ? "pink" : "black",
+    color: theme === "light" ? "#000" : "white",
     borderRadius: "5px",
   };
 
