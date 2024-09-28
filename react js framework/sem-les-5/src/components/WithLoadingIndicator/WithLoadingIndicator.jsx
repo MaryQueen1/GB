@@ -3,6 +3,6 @@ export const WithLoadingIndicator = (Component) => {
     if (isLoading) {
       return <div>Loading</div>;
     }
-    return <Component {...props}/>
-  }; 
-}; 
+    return <Component {...props} />;
+  };
+};
