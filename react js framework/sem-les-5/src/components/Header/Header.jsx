@@ -1,7 +1,15 @@
 import { useContext } from "react";
 import { UserContext } from "../../context/UserContext";
+import { useSelector } from "react-redux";
 
 export const Header = () => {
   const { user } = useContext(UserContext);
-  return <h1>Hello, {user.name}!</h1>;
+  const { name, email } = useSelector((state) => state.user);
+  return (
+    <div>
+      <h1>Hello, {user.name}!</h1>
+      <div>ИМЯ {name}</div>
+      <div>ИМЭИЛ {email}</div>
+    </div>
+  );
 };
