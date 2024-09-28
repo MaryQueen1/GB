@@ -62,5 +62,5 @@ function App() {
 export default App;
 ```
 
-`npm install react-router-adom`
+`npm install react-router-dom`
 `npm install @reduxjs/toolkit`, `npm install react-redux`

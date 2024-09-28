@@ -19,5 +19,25 @@
         "algorithms and data structures/ls2. data structures arrays array algorithms",
         "algorithms and data structures/ls1. introductory lecture algorithms complexity of algorithms",
         "intermediate control work on the specialization block the second"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#47149f",
+        "activityBar.background": "#47149f",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#aa4c15",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#47149f",
+        "statusBar.background": "#330e72",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#47149f",
+        "statusBarItem.remoteBackground": "#330e72",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#330e72",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#330e7299",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#330e72"
 }
