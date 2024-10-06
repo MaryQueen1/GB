@@ -64,3 +64,5 @@ export default App;
 
 `npm install react-router-dom`
 `npm install @reduxjs/toolkit`, `npm install react-redux`
+
+`npm install redux-persist` `npm install redux-thunk` `npm install redux-saga`
