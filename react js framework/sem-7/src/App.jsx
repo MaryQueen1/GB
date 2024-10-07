@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Form from "./components/Form/Form";
+import TodoList from "./components/TodoList/TodoList";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import Goods from "./components/Goods/Goods";
+import FavoriteList from "./components/FavoriteList/FavoriteList";
+import AddProduct from "./components/AddProduct/AddProduct";
+import ProductList from "./components/ProductList/ProductList";
+
+const products = [
+  {
+    id: 1,
+    name: "Samsung Galaxy S23",
+    description:
+      "Флагманский смартфон с отличной камерой и производительностью",
+    price: 75000,
+  },
+  {
+    id: 2,
+    name: "iPhone 15",
+    description:
+      "Последняя модель iPhone с новыми функциями и улучшенной камерой",
+    price: 90000,
+  },
+  {
+    id: 3,
+    name: "Google Pixel 8",
+    description: "Смартфон с чистым Android и лучшими камерами",
+    price: 60000,
+  },
+  {
+    id: 4,
+    name: "OnePlus 11",
+    description: "Смартфон с высокой производительностью и быстрой зарядкой",
+    price: 55000,
+  },
+  {
+    id: 5,
+    name: "Xiaomi Mi 13",
+    description: "Смартфон с хорошим соотношением цены и качества",
+    price: 40000,
+  },
+];
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Provider store={store}>
+      <div className="App">
+        <Form />
+        <TodoList />
+        <Goods products={products} />
+        <FavoriteList products={products} />
+        <h1>Product Catalog</h1>
+        <AddProduct />
+        <ProductList />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </Provider>
+  );
 }
 
-export default App
+export default App;
